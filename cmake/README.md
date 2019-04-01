@@ -1,1 +1,1 @@
-#this is a repository of cmake
+# This is a repository of cmake
