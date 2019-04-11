@@ -3,5 +3,6 @@
 int main() 
 {
 	func3rd();
+	system("pause");
 	return 0;
 }
