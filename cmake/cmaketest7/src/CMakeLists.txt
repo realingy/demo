@@ -10,7 +10,7 @@ set(CMAKE_CONFIGRATION_TYPES "Release" CACHE STRING "" FORCE)
 set(3rd_lib_dir ${CMAKE_SOURCE_DIR}/3rd)
 
 link_directories(${3rd_lib_dir}/lib)
-set(3RDLIBS "optimized;Release/libTest1;debug;Debug/libTest1d;optimized;Release/libTest2;debug;Debug/libTest2d")
+set(3RDLIBS "optimized;Release/MathMultiply;debug;Debug/MathMultiply;optimized;Release/StartUseDll;debug;Debug/StartUseDll")
 
 # C++标准
 set(CMAKE_CXX_STANDARD 11)
@@ -37,5 +37,5 @@ INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR}/subdir3)
 
 # 生成信息
 set(DLL_NAME dllCMakeDemo7)
-add_library(${DLL_NAME} ${HEADERROOT} ${HEADERSUB1} ${HEADERSUB2} ${HEADERSUB3} ${SRC_ROOT} ${SRC_SUB1} ${SRC_SUB2} ${SRC_SUB3})
+add_library(${DLL_NAME} SHARED ${HEADERROOT} ${HEADERSUB1} ${HEADERSUB2} ${HEADERSUB3} ${SRC_ROOT} ${SRC_SUB1} ${SRC_SUB2} ${SRC_SUB3})
 target_link_libraries(${DLL_NAME} ${3RDLIBS})

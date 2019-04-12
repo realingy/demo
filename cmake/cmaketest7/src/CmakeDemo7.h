@@ -14,9 +14,10 @@ namespace CMake7
     class UseDll
 	{
 	public:
-		UseDll();
-		Mutilpy();
-		UseMultip();
+		UseDll(int n1, int n2);
+		void Mutilpy();
+		void ClassUseMultip();
+		void Info();
 	private:
 		int num1;
 		int num2;
