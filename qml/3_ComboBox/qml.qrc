@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>MainForm.ui.qml</file>
+        <file>high.png</file>
+        <file>low.png</file>
+        <file>medium.png</file>
+    </qresource>
+</RCC>
